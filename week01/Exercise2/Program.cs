@@ -11,7 +11,7 @@ class Program
         string userInput = Console.ReadLine();
 
         int number = int.Parse(userInput);
-        
+
         string letter = "";
 
         if (number >= 90)
@@ -35,6 +35,15 @@ class Program
             letter = "F";
         }
 
-        Console.WriteLine($"{letter}");
+        Console.WriteLine($"The grade is {letter}. ");
+
+        if (number >= 70)
+        {
+            Console.WriteLine("Congratulations, you pass!!");
+        }
+        else
+        {
+            Console.WriteLine("Good luck next time.");
+        }
     }
 }
